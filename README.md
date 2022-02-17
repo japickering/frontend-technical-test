@@ -9,7 +9,7 @@ We'd like to know more about the food we eat, starting with fruit. We know we sh
 - Fork this repository.
 - Using [FruityVice](https://www.fruityvice.com), develop a table that presents all available types of fruit.
 - Data shouldn't load automatically, fetch the data on button press – a "Populate Fruit Book" button.
-- We have provided an outline of the HTML – replace this static HTML with React and [antd](https://ant.design/) components.
+- We have provided an rough HTML scaffold – replace this HTML with your own design and [antd](https://ant.design/) components.
 - Style it appropriately, have fun with it and show off your design skills.
 - The tables should be sortable with appropriate columns based on the data.
 
