@@ -22,6 +22,6 @@ We'd like to know more about the food we eat, starting with fruit. We know we sh
 - Write unit tests or at the very least, implement snapshot testing.
 - Deploy it to a static hosting service (GitHub Pages, Netlify etc).
 
-## How to submit
+## How to submit 🔗
 
 - Share a link to a public or private repository on GitHub.
