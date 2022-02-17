@@ -1,7 +1,26 @@
-# Delio Frontend Developer Coding Challenge
+# Delio Frontend Developer Technical Test
 
-## Fruit Filter 🍇
+## Fruit Book 🍇
 
-- Use [FruityVice](https://www.fruityvice.com) open source API to get a list of fruits on button press and present them in a table with sortable columns.
-- Use [React's built in hooks](https://reactjs.org/docs/hooks-reference.html#gatsby-focus-wrapper) to allow dynamic searching of the response data by name. The table should update with every character change.
-- Replace HTML with [antd](https://ant.design/) components and style appropriately (have a bit fo fun with it!)
+We'd like to know more about the food we eat, starting with fruit. We know we should be eating more, but what?!
+
+## Requirements 🗃️
+
+- Fork this repository.
+- Using [FruityVice](https://www.fruityvice.com), develop a table that presents all available types of fruit.
+- Data shouldn't load automatically, fetch the data on button press – a "Populate Fruit Book" button.
+- We have provided an outline of the HTML – replace this static HTML with React and [antd](https://ant.design/) components.
+- Style it appropriately, have fun with it and show off your design skills.
+- The tables should be sortable with appropriate columns based on the data.
+
+## Bonus points 🥇
+
+- We would really like to search Fruit Book in real time. By entering characters into a search box, the list of fruit should begin filtering as the user types.
+- Show us your skills with React's Hooks
+- Use TypeScript
+- Break your work into commits, showing progress and an understanding of GitHub
+- Deploy it to a static hosting service (GitHub Pages, Netlify etc).
+
+## How to submit
+
+- Share a link to a public or private repository on GitHub.
