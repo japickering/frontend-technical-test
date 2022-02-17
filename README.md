@@ -16,9 +16,10 @@ We'd like to know more about the food we eat, starting with fruit. We know we sh
 ## Bonus points 🥇
 
 - We would really like to search Fruit Book in real time. By entering characters into a search box, the list of fruit should begin filtering as the user types.
-- Show us your skills with React's Hooks
-- Use TypeScript
-- Break your work into commits, showing progress and an understanding of GitHub
+- Show us your skills with React's Hooks.
+- Use TypeScript.
+- Break your work into commits, showing progress and an understanding of GitHub.
+- Write unit tests or at the very least, implement snapshot testing.
 - Deploy it to a static hosting service (GitHub Pages, Netlify etc).
 
 ## How to submit
