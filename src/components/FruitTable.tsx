@@ -1,3 +1,4 @@
+// TODO: tables columns should be sortable based on the API data
 const FruitTable = () => (
 	<table className="fruit-table">
       <thead>

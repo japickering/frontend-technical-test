@@ -18,7 +18,7 @@ const FilterForm = () => {
          onClick={() => {
          searchQuery('all');
          }}>
-         Fetch data
+         Populate Fruit Book
       </Button>
     </form>
   );

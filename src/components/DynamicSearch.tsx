@@ -4,6 +4,7 @@ import { searchQuery } from '../libs/search';
 
 const search = 'banana';
 
+// TODO: live search; list of fruit should begin filtering as the user types
 const DynamicSearch = () => (
   <form>
     <div className='form-group'>
