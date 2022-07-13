@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'antd';
-import { searchQuery } from '../libs/search';
 
 const FilterForm = () => {
   return (
@@ -13,13 +12,7 @@ const FilterForm = () => {
         <label htmlFor='calories-max'>Maximum calories</label>
         <input type='text' name='calories-max' id='calories-max' />
       </div>
-      <Button
-        type='primary'
-        onClick={() => {
-          searchQuery('all');
-        }}>
-        Populate Fruit Book
-      </Button>
+      <Button type='primary'> Populate Fruit Book </Button>
     </form>
   );
 };

@@ -1,23 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'antd';
-import { searchQuery } from '../libs/search';
 
-const search = 'banana';
+const DynamicSearch = (): JSX.Element => {
+  const [query, setQuery] = useState('');
 
-// TODO: live search; list of fruit should begin filtering as the user types
-const DynamicSearch = () => (
-  <form>
-    <div className='form-group'>
-      <input type='text' id='search' name='search' className='form-control' placeholder='Search by name..' />
-    </div>
-    <Button
-      type='primary'
-      onClick={() => {
-        searchQuery(search);
-      }}>
-      Search
-    </Button>
-  </form>
-);
+  // TODO: play the CORS acceptable headers guessing game
+  const search = (query: string) => {
+    fetch(`http://www.fruityvice.com/api/fruit/${query}`, {
+      method: 'GET',
+      headers: {
+        contentType: 'application/json',
+      },
+    })
+      .then((res) => {
+        return res.json;
+      })
+      .then((data) => {
+        console.log('data: ', data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const str = event.target.value;
+    setQuery(str);
+  };
+
+  return (
+    <form>
+      <div className='form-group'>
+        <input
+          type='search'
+          id='search'
+          name='search'
+          className='form-control'
+          aria-label='search'
+          placeholder='Search..'
+          value={query}
+          onChange={inputHandler}
+        />
+      </div>
+      <Button type='primary' onClick={(event: React.MouseEvent) => search(query)}>
+        Search FruityVice
+      </Button>
+    </form>
+  );
+};
 
 export default DynamicSearch;
