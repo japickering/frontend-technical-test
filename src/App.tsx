@@ -9,12 +9,12 @@ function App() {
   return (
     <div className='wrapper'>
       <header className='header'>
-         <h1>Fruit Filter</h1>
+        <h1>Fruit Filter</h1>
+        <DynamicSearch />
       </header>
       <main>
         <FilterForm />
         <FruitTable />
-        <DynamicSearch />
       </main>
     </div>
   );

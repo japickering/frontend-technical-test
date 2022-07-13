@@ -1,32 +1,7 @@
-// TODO: tables columns should be sortable based on the API data
-const FruitTable = () => (
-	<table className="fruit-table">
-      <thead>
-         <tr>
-            <th>Name</th>
-            <th>Genus</th>
-            <th>Calories</th>
-            <th>Carbohydrates</th>
-            <th>Sugar</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Banana</td>
-            <td>Musa</td>
-            <td>5</td>
-            <td>2</td>
-            <td>1</td>
-         </tr>
-         <tr>
-            <td>Apple</td>
-            <td>Malus</td>
-            <td>4</td>
-            <td>2</td>
-            <td>12</td>
-         </tr>
-      </tbody>
-	</table>
-);
+import DataTable from 'react-data-table-component';
+import { data, columns } from '../constants/table';
 
-export default FruitTable;
+// TODO: pass data schema from API results
+export default function FruitTable() {
+  return <DataTable title='fruit table' data={data} columns={columns} highlightOnHover pointerOnHover />;
+}

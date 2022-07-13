@@ -14,11 +14,11 @@ const FilterForm = () => {
         <input type='text' name='calories-max' id='calories-max' />
       </div>
       <Button
-         type='primary'
-         onClick={() => {
-         searchQuery('all');
-         }}>
-         Populate Fruit Book
+        type='primary'
+        onClick={() => {
+          searchQuery('all');
+        }}>
+        Populate Fruit Book
       </Button>
     </form>
   );
