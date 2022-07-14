@@ -1,27 +1,9 @@
 import React, { useState } from 'react';
+import { search } from '../libs/search';
 import { Button } from 'antd';
 
-const DynamicSearch = (): JSX.Element => {
+const DynamicSearch = () => {
   const [query, setQuery] = useState('');
-
-  // TODO: play the CORS acceptable headers guessing game
-  const search = (query: string) => {
-    fetch(`http://www.fruityvice.com/api/fruit/${query}`, {
-      method: 'GET',
-      headers: {
-        contentType: 'application/json',
-      },
-    })
-      .then((res) => {
-        return res.json;
-      })
-      .then((data) => {
-        console.log('data: ', data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
 
   const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const str = event.target.value;
@@ -37,13 +19,13 @@ const DynamicSearch = (): JSX.Element => {
           name='search'
           className='form-control'
           aria-label='search'
-          placeholder='Search..'
+          placeholder='Search fruit..'
           value={query}
           onChange={inputHandler}
         />
       </div>
-      <Button type='primary' onClick={(event: React.MouseEvent) => search(query)}>
-        Search FruityVice
+      <Button type='primary' onClick={async () => console.log(await search(query))}>
+        Search
       </Button>
     </form>
   );

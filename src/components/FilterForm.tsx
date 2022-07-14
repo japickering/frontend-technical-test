@@ -1,18 +1,14 @@
 import React from 'react';
+import { fetchAll } from '../libs/search';
 import { Button } from 'antd';
 
+// TODO: get data and filter results table
 const FilterForm = () => {
   return (
     <form>
-      <div className='form-group'>
-        <label htmlFor='calories-min'>Minimum calories</label>
-        <input type='text' name='calories-min' id='calories-min' />
-      </div>
-      <div className='form-group'>
-        <label htmlFor='calories-max'>Maximum calories</label>
-        <input type='text' name='calories-max' id='calories-max' />
-      </div>
-      <Button type='primary'> Populate Fruit Book </Button>
+      <Button type='primary' onClick={async () => console.log(await fetchAll())}>
+        Search all
+      </Button>
     </form>
   );
 };

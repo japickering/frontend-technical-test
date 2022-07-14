@@ -75,6 +75,7 @@ input[type='search'] {
   color: #333;
   border: 1px solid var(--lightgrey);
   border-radius: 0.25rem;
+  outline: 0;
 }
 
 .split {
